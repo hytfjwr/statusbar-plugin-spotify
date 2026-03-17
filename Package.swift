@@ -9,7 +9,7 @@ let package = Package(
         .library(name: "SpotifyPlugin", type: .dynamic, targets: ["SpotifyPlugin"]),
     ],
     dependencies: [
-        .package(path: "../macos-status-bar/StatusBarKit"),
+        .package(url: "https://github.com/hytfjwr/StatusBarKit", from: "1.0.0"),
     ],
     targets: [
         .target(
