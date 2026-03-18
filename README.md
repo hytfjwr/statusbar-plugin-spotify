@@ -2,6 +2,9 @@
 
 Now playing widget for [StatusBar](https://github.com/hytfjwr/StatusBar).
 
+<img width="784" height="984" alt="image" src="https://github.com/user-attachments/assets/c20971e8-0a9b-45e8-b97a-16f0738fc9c0" />
+
+
 ## Features
 
 - Current track info display (title, artist)
