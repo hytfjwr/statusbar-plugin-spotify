@@ -1,3 +1,0 @@
-module StatusBarKit {
-    header "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/include/StatusBarKit-Swift.h"
-}
