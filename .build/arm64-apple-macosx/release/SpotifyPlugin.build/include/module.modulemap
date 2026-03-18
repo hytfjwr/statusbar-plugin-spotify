@@ -1,0 +1,3 @@
+module SpotifyPlugin {
+    header "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/SpotifyPlugin.build/include/SpotifyPlugin-Swift.h"
+}

@@ -11,7 +11,7 @@ DYLIB := $(BUILD_DIR)/lib$(PLUGIN_NAME).dylib
 ZIP_FILE := $(BUILD_DIR)/$(BUNDLE_NAME).statusplugin.zip
 PLUGINS_DIR := $(HOME)/.config/statusbar/plugins
 
-.PHONY: build bundle package release dev clean
+.PHONY: build bundle package dev clean
 
 build:
 	swift build -c release
@@ -25,9 +25,6 @@ bundle: build
 package: bundle
 	cd $(BUILD_DIR) && zip -r $(BUNDLE_NAME).statusplugin.zip $(BUNDLE_NAME).statusplugin/
 	@echo "Package created: $(ZIP_FILE)"
-
-release: package
-	gh release create v$(VERSION) $(ZIP_FILE) --title "v$(VERSION)" --generate-notes
 
 dev: bundle
 	mkdir -p $(PLUGINS_DIR)

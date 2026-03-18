@@ -1,0 +1,139 @@
+{
+  "": {
+    "dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/StatusBarKit.d",
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/StatusBarKit.o",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/master.swiftdeps"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/AppIconProvider.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/AppIconProvider.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/AppIconProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/AppIconProvider.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/AppIconProvider.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/AppIconView.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/AppIconView.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/AppIconView~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/AppIconView.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/AppIconView.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/ConfigNotifications.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ConfigNotifications.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ConfigNotifications~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ConfigNotifications.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ConfigNotifications.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/DylibPluginManifest.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/DylibPluginManifest.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/DylibPluginManifest~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/DylibPluginManifest.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/DylibPluginManifest.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/GlassEffectView.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/GlassEffectView.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/GlassEffectView~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/GlassEffectView.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/GlassEffectView.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/GraphDataBuffer.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/GraphDataBuffer.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/GraphDataBuffer~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/GraphDataBuffer.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/GraphDataBuffer.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/PluginBox.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PluginBox.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PluginBox~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PluginBox.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PluginBox.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/PluginManifest.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PluginManifest.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PluginManifest~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PluginManifest.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PluginManifest.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/PluginProtocol.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PluginProtocol.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PluginProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PluginProtocol.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PluginProtocol.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/PopupButtonStyle.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupButtonStyle.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupButtonStyle~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupButtonStyle.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupButtonStyle.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/PopupComponents.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupComponents.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupComponents~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupComponents.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupComponents.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/PopupManager.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupManager.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupManager.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupManager.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/PopupPanel.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupPanel.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupPanel~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupPanel.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/PopupPanel.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/ScreenIndexEnvironment.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ScreenIndexEnvironment.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ScreenIndexEnvironment~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ScreenIndexEnvironment.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ScreenIndexEnvironment.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/ShellCommand.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ShellCommand.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ShellCommand~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ShellCommand.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ShellCommand.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/StatusBarKitVersion.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/StatusBarKitVersion.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/StatusBarKitVersion~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/StatusBarKitVersion.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/StatusBarKitVersion.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/Theme.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/Theme.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/Theme~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/Theme.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/Theme.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/ThemeProvider.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ThemeProvider.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ThemeProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ThemeProvider.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/ThemeProvider.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/WidgetConfigProvider.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetConfigProvider.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetConfigProvider~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetConfigProvider.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetConfigProvider.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/WidgetLayoutEntry.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetLayoutEntry.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetLayoutEntry~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetLayoutEntry.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetLayoutEntry.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/WidgetProtocol.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetProtocol.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetProtocol.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetProtocol.dia"
+  },
+  "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/checkouts/StatusBarKit/Sources/StatusBarKit/WidgetRegistryProtocol.swift": {
+    "object": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetRegistryProtocol.swift.o",
+    "swiftmodule": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetRegistryProtocol~partial.swiftmodule",
+    "swift-dependencies": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetRegistryProtocol.swiftdeps",
+    "diagnostics": "/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/StatusBarKit.build/WidgetRegistryProtocol.dia"
+  }
+}

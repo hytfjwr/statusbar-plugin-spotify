@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/hayato.fujiwara/Dev/poc/statusbar-plugin-spotify/.build/arm64-apple-macosx/release/libStatusBarKit.dylib'
+relocations:     []
+...

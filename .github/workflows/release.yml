@@ -1,0 +1,33 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '16.4-beta'
+
+      - name: Build & Package
+        run: make package
+
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          BUNDLE_NAME=$(make -s -p | grep '^BUNDLE_NAME' | head -1 | cut -d= -f2 | tr -d ' ')
+          gh release create "$GITHUB_REF_NAME" \
+            ".build/release/${BUNDLE_NAME}.statusplugin.zip" \
+            --title "$GITHUB_REF_NAME" \
+            --generate-notes
