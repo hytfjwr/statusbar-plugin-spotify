@@ -13,3 +13,11 @@ public struct SpotifyPlugin: StatusBarPlugin {
         widgets = [SpotifyWidget()]
     }
 }
+
+// MARK: - Plugin Factory
+
+@_cdecl("createStatusBarPlugin")
+public func createStatusBarPlugin() -> UnsafeMutableRawPointer {
+    let box = PluginBox { SpotifyPlugin() }
+    return Unmanaged.passRetained(box).toOpaque()
+}
