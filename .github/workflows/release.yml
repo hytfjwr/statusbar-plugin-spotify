@@ -40,9 +40,10 @@ jobs:
             patch) PATCH=$((PATCH + 1)) ;;
           esac
           echo "tag=v${MAJOR}.${MINOR}.${PATCH}" >> "$GITHUB_OUTPUT"
+          echo "version=${MAJOR}.${MINOR}.${PATCH}" >> "$GITHUB_OUTPUT"
 
       - name: Build & Package
-        run: make package
+        run: make package VERSION="${{ steps.version.outputs.version }}"
 
       - name: Create tag and release
         env:
