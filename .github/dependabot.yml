@@ -4,8 +4,12 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    reviewers:
+      - "hytfjwr"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+    reviewers:
+      - "hytfjwr"
