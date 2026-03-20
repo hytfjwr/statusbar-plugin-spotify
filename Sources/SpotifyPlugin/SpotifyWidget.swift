@@ -50,8 +50,8 @@ public final class SpotifyWidget: StatusBarWidget {
     @ViewBuilder
     public func settingsBody() -> some View {
         Form {
-            Toggle("常にアイコンを表示", isOn: Bindable(self).alwaysShowIcon)
-                .help("オフの場合、音楽の再生中のみアイコンが表示されます")
+            Toggle("Always show icon", isOn: Bindable(self).alwaysShowIcon)
+                .help("When off, the icon is only visible during playback")
         }
         .formStyle(.grouped)
     }
