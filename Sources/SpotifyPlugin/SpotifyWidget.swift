@@ -10,11 +10,19 @@ public final class SpotifyWidget: StatusBarWidget {
     public let position: WidgetPosition = .center
     public let updateInterval: TimeInterval? = nil
     public var sfSymbolName: String { "music.note" }
+    public var preferredSettingsSize: CGSize? { CGSize(width: 300, height: 100) }
 
     private let service = SpotifyService()
     private var popupPanel: PopupPanel?
 
-    public init() {}
+    private static let alwaysShowIconKey = "com.statusbar.spotify.alwaysShowIcon"
+    var alwaysShowIcon: Bool {
+        didSet { UserDefaults.standard.set(alwaysShowIcon, forKey: Self.alwaysShowIconKey) }
+    }
+
+    public init() {
+        alwaysShowIcon = UserDefaults.standard.bool(forKey: Self.alwaysShowIconKey)
+    }
 
     public func start() {
         service.start()
@@ -27,7 +35,7 @@ public final class SpotifyWidget: StatusBarWidget {
 
     @ViewBuilder
     public func body() -> some View {
-        if service.isPlaying {
+        if alwaysShowIcon || service.isPlaying {
             HStack(spacing: 4) {
                 AppIconView(appName: "Spotify", size: 18)
             }
@@ -37,6 +45,15 @@ public final class SpotifyWidget: StatusBarWidget {
                 self?.togglePopup()
             }
         }
+    }
+
+    @ViewBuilder
+    public func settingsBody() -> some View {
+        Form {
+            Toggle("常にアイコンを表示", isOn: Bindable(self).alwaysShowIcon)
+                .help("オフの場合、音楽の再生中のみアイコンが表示されます")
+        }
+        .formStyle(.grouped)
     }
 
     private func togglePopup() {
