@@ -1,0 +1,31 @@
+import Foundation
+
+@MainActor
+@Observable
+final class SpotifySettings {
+    private static let alwaysShowIconKey = "com.statusbar.spotify.alwaysShowIcon"
+    private static let artworkColorEnabledKey = "com.statusbar.spotify.artworkColorEnabled"
+    private static let artworkColorOpacityKey = "com.statusbar.spotify.artworkColorOpacity"
+
+    var alwaysShowIcon: Bool {
+        didSet { UserDefaults.standard.set(alwaysShowIcon, forKey: Self.alwaysShowIconKey) }
+    }
+
+    var artworkColorEnabled: Bool {
+        didSet { UserDefaults.standard.set(artworkColorEnabled, forKey: Self.artworkColorEnabledKey) }
+    }
+
+    var artworkColorOpacity: Double {
+        didSet { UserDefaults.standard.set(artworkColorOpacity, forKey: Self.artworkColorOpacityKey) }
+    }
+
+    init() {
+        UserDefaults.standard.register(defaults: [
+            Self.artworkColorEnabledKey: true,
+            Self.artworkColorOpacityKey: 0.35,
+        ])
+        alwaysShowIcon = UserDefaults.standard.bool(forKey: Self.alwaysShowIconKey)
+        artworkColorEnabled = UserDefaults.standard.bool(forKey: Self.artworkColorEnabledKey)
+        artworkColorOpacity = UserDefaults.standard.double(forKey: Self.artworkColorOpacityKey)
+    }
+}
