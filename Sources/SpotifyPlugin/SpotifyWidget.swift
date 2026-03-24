@@ -10,19 +10,14 @@ public final class SpotifyWidget: StatusBarWidget {
     public let position: WidgetPosition = .center
     public let updateInterval: TimeInterval? = nil
     public var sfSymbolName: String { "music.note" }
-    public var preferredSettingsSize: CGSize? { CGSize(width: 300, height: 100) }
+    public var preferredSettingsSize: CGSize? { CGSize(width: 300, height: 300) }
 
     private let service = SpotifyService()
+    private let settings = SpotifySettings()
+    private let colorStore = ArtworkColorStore()
     private var popupPanel: PopupPanel?
 
-    private static let alwaysShowIconKey = "com.statusbar.spotify.alwaysShowIcon"
-    var alwaysShowIcon: Bool {
-        didSet { UserDefaults.standard.set(alwaysShowIcon, forKey: Self.alwaysShowIconKey) }
-    }
-
-    public init() {
-        alwaysShowIcon = UserDefaults.standard.bool(forKey: Self.alwaysShowIconKey)
-    }
+    public init() {}
 
     public func start() {
         service.start()
@@ -31,11 +26,12 @@ public final class SpotifyWidget: StatusBarWidget {
     public func stop() {
         service.stop()
         popupPanel?.hidePopup()
+        colorStore.reset()
     }
 
     @ViewBuilder
     public func body() -> some View {
-        if alwaysShowIcon || service.isPlaying {
+        if settings.alwaysShowIcon || service.isPlaying {
             HStack(spacing: 4) {
                 AppIconView(appName: "Spotify", size: 18)
             }
@@ -50,8 +46,22 @@ public final class SpotifyWidget: StatusBarWidget {
     @ViewBuilder
     public func settingsBody() -> some View {
         Form {
-            Toggle("Always show icon", isOn: Bindable(self).alwaysShowIcon)
+            Toggle("Always show icon", isOn: Bindable(settings).alwaysShowIcon)
                 .help("When off, the icon is only visible during playback")
+            Section("Background") {
+                Toggle("Album art color", isOn: Bindable(settings).artworkColorEnabled)
+                    .help("Tint the popup background with the album artwork's dominant color")
+                if settings.artworkColorEnabled {
+                    HStack {
+                        Text("Opacity")
+                        Slider(value: Bindable(settings).artworkColorOpacity, in: 0...1)
+                        Text("\(Int(settings.artworkColorOpacity * 100))%")
+                            .monospacedDigit()
+                            .frame(width: 36, alignment: .trailing)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+            }
         }
         .formStyle(.grouped)
     }
@@ -80,7 +90,7 @@ public final class SpotifyWidget: StatusBarWidget {
         service.fetchTrackInfo()
         service.startPositionPolling()
 
-        let content = SpotifyPopupContent(service: service)
+        let content = SpotifyPopupContent(service: service, settings: settings, colorStore: colorStore)
         popupPanel?.showPopup(relativeTo: barFrame, on: screen, content: content)
     }
 }
@@ -89,6 +99,8 @@ public final class SpotifyWidget: StatusBarWidget {
 
 private struct SpotifyPopupContent: View {
     let service: SpotifyService
+    let settings: SpotifySettings
+    let colorStore: ArtworkColorStore
 
     private let artworkSize: CGFloat = 220
     private let popupWidth: CGFloat = 300
@@ -164,6 +176,24 @@ private struct SpotifyPopupContent: View {
             .padding(.bottom, 20)
         }
         .frame(width: popupWidth)
+        .background {
+            (colorStore.dominantColor ?? .clear)
+                .opacity(settings.artworkColorEnabled ? settings.artworkColorOpacity : 0)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .animation(.easeInOut(duration: 1.5), value: colorStore.dominantColor)
+                .animation(.easeInOut(duration: 0.5), value: settings.artworkColorEnabled)
+        }
+        .onChange(of: service.artworkURL) { _, _ in syncColor() }
+        .onChange(of: settings.artworkColorEnabled) { _, _ in syncColor() }
+        .onAppear { syncColor() }
+    }
+
+    private func syncColor() {
+        if settings.artworkColorEnabled {
+            colorStore.update(artworkURL: service.artworkURL)
+        } else {
+            colorStore.reset()
+        }
     }
 
     @ViewBuilder
