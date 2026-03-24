@@ -4,10 +4,12 @@ Now playing widget for [StatusBar](https://github.com/hytfjwr/StatusBar).
 
 <img width="784" height="984" alt="image" src="https://github.com/user-attachments/assets/c20971e8-0a9b-45e8-b97a-16f0738fc9c0" />
 
+https://github.com/user-attachments/assets/721ef9f3-7b0c-43e3-bc2f-1b558282d9e8
 
 ## Features
 
 - Current track info display (title, artist)
+- Dynamic background color extracted from album artwork (with smooth fade transitions)
 - Event-driven updates via Spotify notifications
 
 ## Install
