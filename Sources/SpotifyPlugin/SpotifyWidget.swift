@@ -29,13 +29,32 @@ public final class SpotifyWidget: StatusBarWidget {
         colorStore.reset()
     }
 
+    private var trackVisible: Bool {
+        settings.showTrackName && service.isPlaying && !service.trackName.isEmpty
+    }
+
     @ViewBuilder
     public func body() -> some View {
         if settings.alwaysShowIcon || service.isPlaying {
-            HStack(spacing: 4) {
+            HStack(spacing: trackVisible ? 4 : 0) {
                 AppIconView(appName: "Spotify", size: 18)
+                Text(service.trackName)
+                    .font(.system(size: 12))
+                    .lineLimit(1)
+                    .fixedSize(horizontal: true, vertical: false)
+                    .frame(maxWidth: trackVisible ? 150 : 0, alignment: .leading)
+                    .clipped()
+                    .opacity(trackVisible ? 1 : 0)
             }
+            .fixedSize()
             .padding(.horizontal, 4)
+            .padding(.vertical, 2)
+            .background(
+                RoundedRectangle(cornerRadius: 6, style: .continuous)
+                    .fill(.black.opacity(0.15))
+            )
+            .animation(.easeInOut(duration: 0.25), value: trackVisible)
+            .animation(.easeInOut(duration: 0.25), value: service.trackName)
             .contentShape(Rectangle())
             .onTapGesture { [weak self] in
                 self?.togglePopup()
@@ -48,6 +67,8 @@ public final class SpotifyWidget: StatusBarWidget {
         Form {
             Toggle("Always show icon", isOn: Bindable(settings).alwaysShowIcon)
                 .help("When off, the icon is only visible during playback")
+            Toggle("Show track name", isOn: Bindable(settings).showTrackName)
+                .help("Display the current track name next to the icon")
             Section("Background") {
                 Toggle("Album art color", isOn: Bindable(settings).artworkColorEnabled)
                     .help("Tint the popup background with the album artwork's dominant color")
